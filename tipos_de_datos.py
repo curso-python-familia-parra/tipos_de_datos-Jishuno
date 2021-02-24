@@ -2,166 +2,257 @@ data = ('  GARCIA,gonzalez,        rodriguez  ,FERNANDEZ ,LOPEZ,martinez ,  sanc
   '\n   0.0;  0,3915640139588511;   1,9340597238753945  ;0.6653954700726155  ;1.78966929765993  ;0,8925750592486043; 1.0633239529100942   ;  1.2682810666073516;6.33298367854778   ;  1,0461785303596178 ;   8.907830323167131  ;3.0446982384977104  ;9.700711003512291 ;0.4390599967016322  ;7.174751967440802;6.645791079039824   ;14.162687916598829 ;   1,6544315655202046;  8.37762740505497   ;  7.917982923906185;16.34094774858801  ;2,463663146185154   ; 15,984282186147233 ;2.826551715525298 ; 2,175353845313497   ;22.153971929689074   ;16,195804546971928   ;  4.064083294297868   ;   10.387675004869177;15.470959926620308;0.06992844945199916 ;  0.2920632865452847   ;   10,168925491755743;12.035377718160778  ;21.78201684168718;  3.5537606156094355  ; 9,758511521251075  ;20,21273309511788  ; 15.584226312294449  ;3,1794789097327425 ;28.581955974422502;28,41462583156463 ;27,8851234098602  ;   42.32211442293918;5.416689007736912   ;  0,9281650846589024   ;  37.4712302814707   ;4,119058605987937   ;32,76596203545368   ;  24.29691012861899 ;  33.28138020600936;  20,357132723113153 ;  42.36063756980889   ;   33,93671732226829;14,895161269822369 ;  39,88560686635428;  7,607643836738783;16.13143437630583;49,648921901824316  ;23,49001354388641  ;19,99235768455098;60.309488473048646   ; 49,836200211488595;49,146515140407644   ; 53.32870286351994 ; 64.42107097049958;11,630757148467632   ;  13.35169055952055 ;22,94204559476671   ;65,07461636920463;  46,23017928114905   ;38,261640127102034; 9.506475367319497  ;58,709993276281175  ;68.8805946538481;  7.820068556534521; 11.19677195819853;   71.70022253226301   ;  52,83194705698967;46.36972766377081;10.034556964466086   ;   29,31793318068633; 9.639615458644258  ; 57,6048174586411 ; 15.896382790358484;  79.60812041626542;74,08924976191184   ;9,11947552403137 ;  78.41791591134458   ;21.28288398331073;  67,46527896720556;37.525134408488434  ;   85.25687731842717   ;61,99123501146086   ;39.88337251943173  ;  90.19280594235246   ;   1.163039700550808;71.31140588258788;   1,935048716374434; 5.536238663750831;91,26167519012772;39.75536407678397;96.05486827063329   ;55.770793410114585   ;  2,4717667150750193;89,16238710429703; 51,38546605390951  ;15,670206048979264; 54,04252338176086 ;  59,63851204955184  ;62,391431344777025;   90,17536598559542  ;15.767937388895385   ;77,68255587341397;82.09016739682595   ;  12.425609885801334;  112,96339583678314;  80.32293653852484  ;117,38781673924841  ;47,55905095826172;66,08662883616248; 117,36678214471385;57,402576935672066 ;  106.58127716093256 ;  20.01136361459725;8,294048531205494;  4,421338283741741; 1,578176988715229;   99,06512911029836;  94.39029474708687   ;87,5641788797335;13,443487656491575   ; 8,348013659920813 ;87,67388227738377  ;81.14262282893023;  36,54544523283628;21.758625402606732;   12.012350030799436;  79.68311287328012 ;72.44246440373767 ;101.33049872543286  ; 77,26243930257246  ;  110,40716842037688  ;   93,64353448934102;52.6996609978101;11.557841749832335;3,7466771587686614  ;  62,63327999003999  ;52,89168628640881  ;115.70833572488489  ;91.1660632154361   ;148,25576180448326; 144.39559784046003  ;  105,76377354879178;  56.374558943096275;6.684270131697453   ;  108,06822963763378;  67.56678006963122;30.054366509334706   ; 64,45375644088739 ;  138.49606501585973;9,629143435058324; 112.58431333196293   ; 105.71617175952642  ; 19.078750156943965;33,05419975646074;155.70917035809535   ;104.50033483988365  ;11,19215781942611  ;9,280992773132187 ;   82.14789127763716   ;117,93554140883981;  116,61449879975605;  12,228469796036862;170.43502407942972  ;  107.00911696580404  ;30.553007349664092;141,10616256359233 ;68,64249838216416   ;   31.841978708250064; 73.81742136702417  ;92,6712490809544 ;81.03089457252625 ;86.26664108926843;57,990086845682015;42.351187900333265;   119,11009853154022;45.57318977785281;110,10057870159073  ;60.685546692782374;  74.72743939496665;36.412835983066294   ; 108,84113402737538;192.96891481598976;118,32878440452836  ; 120.84230622654893 ;   143,41847134511414;  17,19118321259734 ;47,04426022073273;  22,45884587642315 '
 )
 
-"""Dividir el string contenido en la variable `data` en donde se encuentre el 
+""" 1 Dividir el string contenido en la variable `data` en donde se encuentre el 
 primer caracter `\n` y guardar el resultado en una variable llamada `var1`.
 """
 
+var1 = data.split('\n', 1)
+print(var1[0])
+print('\n' + 'Decimales' + '\n')
+print(var1[1])
 
-"""Guardar el primer elemento de la variable `var1` en una variable llamada 
+
+""" 2 Guardar el primer elemento de la variable `var1` en una variable llamada 
 `apellidos` y el segundo elemento en una llamada `decimales`.
 """
+apellidos = var1[0]
+decimales = var1[1]
+print('\n' + 'Apellidos' + '\n')
+print(apellidos)
+print('\n' + 'Decimales' + '\n')
+print(decimales)
 
-
-"""Dividir el string contenido en la variable `apellidos` en donde se encuentre el 
+""" 3 Dividir el string contenido en la variable `apellidos` en donde se encuentre el 
 el caracter `,` y guardar el resultado en una variable llamada `apellidos_list`.
 """
+print('\n' + "--------- Apellidos Lista ------------" + '\n')
+apellidos_list = apellidos.split(',')
+print(apellidos_list)
 
-
-"""Dividir el string contenido en la variable `decimales` en donde se encuentre el 
+""" 4 Dividir el string contenido en la variable `decimales` en donde se encuentre el 
 el caracter `;` y guardar el resultado en una variable llamada `decimales_list`.
 """
+print('\n' + "--------- Decimales Lista ------------" + '\n')
+decimales_list = decimales.split(';')
+print(decimales_list)
 
-
-"""Obtener el elemento en la posición 38 de `decimales_list`, procesarlo para 
+""" 5 Obtener el elemento en la posición 38 de `decimales_list`, procesarlo para 
 convertirlo en un entero y guardarlo en variable `var2`.
 """
 
+print('\n' + "--------- Decimal Posición 38 ------------" + '\n')
+var2 = int(float(decimales_list[38]))
+print(var2)
 
-"""Obtener el valor en la posición que indique dicho entero (`var2`) de la lista 
-`apellidos_list`. Guardar el resultado en variable `apellido`.
+""" 6 Obtener el valor en la posición que indique dicho entero (`var2`) de la lista `apellidos_list`. Guardar el resultado en variable `apellido`.
 """
+print('\n' + "--------- Apellido Posición var2 ------------" + '\n')
+apellido = apellidos_list[var2]
+print(apellido)
 
-
-"""obtener la longitud (cantidad de caracteres) de la variable `apellido` y 
+""" 7 obtener la longitud (cantidad de caracteres) de la variable `apellido` y 
 guardar el resultado en `len_apellido`.
 """
+print('\n' + "--------- Apellido lenght ------------" + '\n')
+len_apellido = len(apellido)
+print(len_apellido)
 
-
-"""Remover los espacios en blanco que hayan en la variable `apellido` y guardar 
-resultado en `apellido2`.
+""" 8 Remover los espacios en blanco que hayan en la variable `apellido` y guardar resultado en `apellido2`.
 """
+print('\n' + "--------- Apellido 2 no spaces ------------" + '\n')
+apeaux = apellido.lstrip()
+apellido2 = apeaux.rstrip()
+print(apellido2)
+print(len(apellido2))
 
-
-"""Guardar en `apellido_es_mayuscula` si `apellido2` es un string que contiene 
+""" 9 Guardar en `apellido_es_mayuscula` si `apellido2` es un string que contiene 
 solo letras mayúsculas.
 """
+print('\n' + "--------- Apellido 2 is upper ------------" + '\n')
+apellido_es_mayuscula = apellido2.isupper()
+print(apellido_es_mayuscula)
 
-
-"""Convertir la variable `apellido2` de mayúsculas a minúsculas si está en mayúsculas, 
+""" 10 Convertir la variable `apellido2` de mayúsculas a minúsculas si está en mayúsculas, 
 o de minúsculas a mayúsculas si está en minúsculas y guardarla en `apellido3`.
 """
+print('\n' + "--------- Apellido 3 (apellido 2 convert) ------------" + '\n')
+apellido3 = apellido2.upper()
+print(apellido3)
 
-
-"""Crear variable `a_in_apellido` que contenga la cantidad de letras a que contiene 
+""" 11 Crear variable `a_in_apellido` que contenga la cantidad de letras 'a' que contiene 
 la variable `apellido2`.
 """
+print('\n' + "--------- Apellido 2 lenght ------------" + '\n')
+a_in_apellido = apellido2.count('a')
+print(a_in_apellido)
 
-
-"""Crear variable `apellido_end_ez` que contenga si la variable `apellido2` 
+""" 12 Crear variable `apellido_end_ez` que contenga si la variable `apellido2` 
 termina con el string `"ez"`.
 """
+print('\n' + "--------- Apellido 2 ends EZ------------" + '\n')
+apellido_end_ez = apellido2.endswith("ez")
+print(apellido_end_ez)
 
-
-"""Crear tupla llamada `apellidos_tuple` que contenga los elementos desde el 49 
-al 23 (en orden invertido), saltandose de a 1 elemento (49, 47, 45 , etc) de la
-lista `apellidos_list`.
+""" 13 Crear tupla llamada `apellidos_tuple` que contenga los elementos desde el 49 al 23 (en orden invertido), saltandose de a 1 elemento (49, 47, 45 , etc) de la lista `apellidos_list`.
 """
+print('\n' + "--------- Apellidos_list elements 49 - 23------------" + '\n')
+apellidos_tuple = tuple(apellidos_list[49:22:-2])
+print(apellidos_tuple)
 
-
-"""Crear variable `apellidos_list2` que contenga una copia de `apellidos_tuple` 
+""" 14 Crear variable `apellidos_list2` que contenga una copia de `apellidos_tuple` 
 (con las conversiones que sean necesarias) y agregarle el elemento de la 
 posición 78 de la lista `apellidos_list`.
 """
+print('\n' + "--------- Apellidos_list2 w/ element 78 ------------" + '\n')
+apellidos_list2 = list(apellidos_tuple)
+apellidos_list2.append(apellidos_list[78])
+print(apellidos_list2)
 
 
-"""Eliminar el 4 elemento de la variable `apellidos_list2`.
+""" 15 Eliminar el 4 elemento de la variable `apellidos_list2`.
 """
+print('\n' + "--------- Apellidos_list2 no element 4 ------------" + '\n')
+Delelement = apellidos_list2.pop(3)
+print(apellidos_list2)
+print('\n')
+print('El elemento eliminado fué: ')
+print(Delelement)
 
-
-"""Eliminar el elemento igual a "  MORALES" de la variable `apellidos_list2`.
+""" 16 Eliminar el elemento igual a "  MORALES" de la variable `apellidos_list2`.
 """
+print('\n' + "--------- Apellidos_list2 no element 'Morales' ------------" + '\n')
+print(apellidos_list2.index('  MORALES'))
+apellidos_list2.remove('  MORALES')
+print(apellidos_list2)
 
-
-"""Agregar (concatenar) a la variable `apellidos_list2`, la lista obtenida del
+""" 17 Agregar (concatenar) a la variable `apellidos_list2`, la lista obtenida del
 elemento 56 al 70 de la variable `apellidos_list`.
 """
+print('\n' + "--------- Apellidos_list concatenated to apellidos_list2 ------------" + '\n')
+apellidos_list2.extend(apellidos_list[56:71])
+print(apellidos_list2)
 
-
-"""Invertir el orden actual de la variable `apellidos_list2`.
+""" 18 Invertir el orden actual de la variable `apellidos_list2`.
 """
+print('\n' + "--------- Revert Apellidos_list2------------" + '\n')
+apellidos_list2.reverse()
+print(apellidos_list2)
 
-
-"""Crear variable `apellidos_set1` con los elementos del 56 al 66 de la 
+""" 19 Crear variable `apellidos_set1` con los elementos del 56 al 66 de la 
 variable `apellidos_list`, y crear variable `apellidos_set2` con elementos del 
 62 al 76 de la variable `apellidos_list`.
 """
+print('\n' + "--------- Create Apellidos set1 and set2------------" + '\n')
+apellidos_set1 = set(apellidos_list[56:67])
+apellidos_set2 = set(apellidos_list[62:77])
+print("-- Set 1 --")
+print(apellidos_set1)
+print("-- Set 2 --")
+print(apellidos_set2)
 
-
-"""Agregar a variable `apellidos_set1` el elemento en la pocisión 67 de la 
+""" 20 Agregar a variable `apellidos_set1` el elemento en la pocisión 67 de la 
 variable `apellidos_list`.
 """
+print('\n' + "--------- add apellido position_list 67 to set1 ------------" + '\n')
+apellidos_set1.add(apellidos_list[67])
+print(apellidos_set1)
 
 
-"""Agregar a variable `apellidos_set1` los elementos del 68 al 70 de la 
+""" 21 Agregar a variable `apellidos_set1` los elementos del 68 al 70 de la 
 variable `apellidos_list`.
 """
+print('\n' + "--------- add apellido position_list 68 - 70 to set1 ------------" + '\n')
+apellidos_set1.update(apellidos_list[68:71])
+print(apellidos_set1)
 
-
-"""Eliminar el elemento " CAMPOS  " de la variable `apellidos_set1`.
+""" 22 Eliminar el elemento " CAMPOS  " de la variable `apellidos_set1`.
 """
+print('\n' + "--------- delete apellido ' CAMPOS  ' from set1 ------------" + '\n')
+apellidos_set1.remove(" CAMPOS  ")
+print(apellidos_set1)
 
-
-"""Crear la variable `apellidos_set3` con la intersección entre `apellidos_set1` 
+""" 23 Crear la variable `apellidos_set3` con la intersección entre `apellidos_set1` 
 y `apellidos_set2`.
 """
+print('\n' + "--------- & btwn set1 and set2 ------------" + '\n')
+
+apellidos_set3 = apellidos_set1.intersection(apellidos_set2)
+print(apellidos_set3)
 
 
-"""Crear la variable `apellidos_set4` con la unión entre `apellidos_set1` y 
+""" 24Crear la variable `apellidos_set4` con la unión entre `apellidos_set1` y 
 `apellidos_set2`.
 """
+print('\n' + "--------- | btwn set1 and set2 ------------" + '\n')
+apellidos_set4 = apellidos_set1 | apellidos_set2
+print(apellidos_set4)
 
 
-"""Crear la variable `apellidos_set5` con la diferencia de `apellidos_set1` menos 
+""" 25 Crear la variable `apellidos_set5` con la diferencia de `apellidos_set1` menos 
 `apellidos_set2`.
 """
+print('\n' + "--------- '-' btwn set1 and set2 ------------" + '\n')
+apellidos_set5 = apellidos_set1.difference(apellidos_set2)
+print(apellidos_set5)
 
-
-"""Crear la variable `apellidos_set5` con la diferencia simétrica entre 
+""" 26 Crear la variable `apellidos_set5` con la diferencia simétrica entre 
 `apellidos_set1` y `apellidos_set2`.
 """
+print('\n' + "--------- '^' btwn set1 and set2 ------------" + '\n')
+apellidos_set5 = apellidos_set1 ^ apellidos_set2
+print(apellidos_set5)
 
-
-"""Crear la variable `var3` con la respuesta a la pregunta de si `apellidos_set3` 
+""" 27 Crear la variable `var3` con la respuesta a la pregunta de si `apellidos_set3` 
 es un subconjunto de `apellidos_set1`.
 """
+print('\n' + "--------- 'Set3 is subset set1 ------------" + '\n')
+var3 = apellidos_set3.issubset(apellidos_set1)
+print(var3)
 
 
-"""Crear la variable `apellidos_dict` usando la función `fromkeys` con la lista
+""" 28 Crear la variable `apellidos_dict` usando la función `fromkeys` con la lista
 del 0 al 4 de la lista `apellidos_lista`.
 """
+print('\n' + "--------- 'create dict fromkeys() ------------" + '\n')
+
+apellidos_dict = dict.fromkeys(apellidos_list[0:5])
+print(apellidos_dict)
 
 
-"""Agregar el siguiente diccionario: {"key1": 12, "key2": 24} al diccionario  
+""" 29 Agregar el siguiente diccionario: {"key1": 12, "key2": 24} al diccionario  
 `apellidos_dict`.
 """
+print('\n' + "--------- 'Add dict elements ------------" + '\n')
+Add = {"key1": 12, "key2": 24}
+apellidos_dict.update(Add)
+print(apellidos_dict)
 
 
-"""Asignar el valor del entero `34` a la llave "gonzalez" en el diccionario 
+""" 30 Asignar el valor del entero `34` a la llave "gonzalez" en el diccionario 
 `apellidos_dict`.
 """
+print('\n' + "--------- 'Assign value 34 to 'gonzales' key ------------" + '\n')
+apellidos_dict["gonzalez"] = 34
+print(apellidos_dict)
 
 
-"""Sacar el valor de la llave "gonzalez" del diccionario `apellidos_dict` y 
+""" 31 Sacar el valor de la llave "gonzalez" del diccionario `apellidos_dict` y 
 guardarlo en la variable `apellido_gonzalez`.
 """
+print('\n' + "--------- 'Extract value from key 'gonzalez' ------------" + '\n')
+apellido_gonzalez = apellidos_dict.pop('gonzalez')
+print(apellido_gonzalez)
 
-
-"""Eliminar el último elemento del diccionario `apellidos_dict`.
+""" 32 Eliminar el último elemento del diccionario `apellidos_dict`.
 """
+print('\n' + "--------- 'Extract last value from apellidos_dict ------------" + '\n')
+apellidos_dict.popitem()
+print(apellidos_dict)
 
-
-"""Sacar el valor de la llave "no_existe" del diccionario `apellidos_dict` y 
+""" 33 Sacar el valor de la llave "no_existe" del diccionario `apellidos_dict` y 
 guardarlo en la variable `apellido_none`.
 """
-
+print('\n' + "--------- 'Extract value from key 'no existe' ------------" + '\n')
+apellido_none = apellidos_dict.pop("no_existe", None)
+print(apellido_none)
 
